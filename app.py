@@ -102,5 +102,4 @@ elif page == "News Summarizer Tool":
         response = chat.choices[0].message.content
         struct.append({"role": "assistant", "content": response})
         st.success("Insight generated successfully!")
-        st.subheader("Summary : ")
         st.write(response)
