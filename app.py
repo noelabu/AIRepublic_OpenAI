@@ -24,7 +24,7 @@ openai.api_key = api_key
 with st.sidebar:
     page = option_menu(
         "Dashboard",
-        ["Home", "About Us", "Chatbot", "Sentiment Analysis", "News Summarizer Tool"],
+        ["Home", "About Us", "News Summarizer Tool"],
         icons=['house', 'info-circle', 'chat-dots', 'emoji-smile', 'file-text'],
         menu_icon="list",
         default_index=0,
@@ -32,7 +32,6 @@ with st.sidebar:
 
 if not api_key:
     st.warning("Please enter your OpenAI API Key in the sidebar to use the application.")
-    return
 
 if page == "Home":
     st.header("Welcome to NLP Application")
