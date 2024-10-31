@@ -8,3 +8,5 @@ langchain==0.1.20
 tiktoken==0.6.0
 numpy
 scipy
+newspaper3k
+lxml_html_clean
